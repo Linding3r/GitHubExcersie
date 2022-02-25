@@ -4,13 +4,16 @@ import java.util.Scanner;
 
 public class Main {
     Scanner sc = new Scanner(System.in);
+    public void hiThere(){
+        System.out.println("HAHAHAHAH");
+    }
 
-    public void greet(){
+    public void shootPerson(){
         System.out.println("Hi! Please enter your name");
         String name = sc.next();
         System.out.println("Hi " + name + "!");
     }
-    public int askAboutAge(){
+    public int askAboutName(){
         int age;
         System.out.println("What is your age?");
         age = sc.nextInt();
@@ -20,7 +23,7 @@ public class Main {
     public static void main(String[] args) {
         Main prg = new Main();
         System.out.println("It works");
-        prg.greet();
-        prg.askAboutAge();
+        prg.shootPerson();
+        prg.askAboutName();
     }
 }
